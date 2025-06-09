@@ -3,38 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <title>TecnoActualidad</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>TecnoActualidad</h1>
+    <div class="container">
+      <h1>TecnoActualidad</h1>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#articulos">Artículos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section class="card">
-      <h2>🔍 ¿Qué es la inteligencia artificial y cómo está cambiando el mundo?</h2>
-      <p>La inteligencia artificial (IA) transforma industrias, desde la medicina hasta la educación. Su capacidad para aprender y adaptarse revoluciona el mundo tal como lo conocemos.</p>
+    <section id="inicio" class="hero">
+      <h2>Bienvenido a TecnoActualidad</h2>
+      <p>Tu fuente confiable de noticias tecnológicas, comparativas, guías y más.</p>
     </section>
 
-    <section class="card">
-      <h2>📱 Top 5 móviles de gama media en 2025</h2>
-      <p>Descubre los smartphones con mejor relación calidad-precio este año: cámaras potentes, buen rendimiento y baterías que duran todo el día.</p>
+    <section id="articulos" class="articles">
+      <h2>Últimos Artículos</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>🔍 ¿Qué es la inteligencia artificial?</h3>
+          <p>La IA está revolucionando industrias como la salud, la educación y el transporte. Descubre cómo.</p>
+        </article>
+        <article class="card">
+          <h3>📱 Top 5 móviles de gama media 2025</h3>
+          <p>Te mostramos los mejores móviles con gran calidad-precio para este año.</p>
+        </article>
+        <article class="card">
+          <h3>💻 Windows vs. Linux</h3>
+          <p>¿Cuál es el sistema ideal para ti? Te lo explicamos comparando sus ventajas.</p>
+        </article>
+        <article class="card">
+          <h3>☁️ Almacenamiento en la nube</h3>
+          <p>Google Drive, Dropbox, iCloud... Entiende cómo funciona y cómo elegir el mejor.</p>
+        </article>
+        <article class="card">
+          <h3>🧠 Tecnología y salud mental</h3>
+          <p>¿Nos ayuda o nos afecta? Analizamos su impacto real.</p>
+        </article>
+      </div>
     </section>
 
-    <section class="card">
-      <h2>💻 Windows vs. Linux: ¿cuál te conviene más?</h2>
-      <p>Comparamos ambos sistemas para que elijas el mejor según tus necesidades: juegos, programación, seguridad y facilidad de uso.</p>
-    </section>
-
-    <section class="card">
-      <h2>☁️ Guía para entender el almacenamiento en la nube</h2>
-      <p>Desde Google Drive hasta iCloud, te explicamos cómo funciona la nube, sus ventajas y cómo mantener seguros tus archivos.</p>
-    </section>
-
-    <section class="card">
-      <h2>🧠 Tecnología y salud mental: una relación compleja</h2>
-      <p>Las redes sociales, las pantallas y las apps de bienestar: ¿ayudan o afectan nuestra salud mental? Aquí te lo contamos.</p>
+    <section id="contacto" class="contact">
+      <h2>Contacto</h2>
+      <form>
+        <input type="text" placeholder="Tu nombre" required>
+        <input type="email" placeholder="Tu correo" required>
+        <textarea placeholder="Escribe tu mensaje..." required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
     </section>
   </main>
 
